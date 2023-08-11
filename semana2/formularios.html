@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registro de usuarios</h1>
+
+    <form action="">
+        <p>
+            <input type="text" placeholder="Nombre" />
+        </p>
+        <p>
+            <input type="text" placeholder="Apellido" />
+        </p>
+        <p>
+            <input type="email" placeholder="E-mail" name="fecha_de_nacimiento" />
+        </p>
+        <p>
+            <input type="date" placeholder="Fecha de nacimiento" />
+        </p>
+        <p>
+            <input type="number" placeholder="Ingresa tu DNI" name="dni" />
+        </p>
+        <p>
+            <input type="tel" placeholder="Teléfono" name="telefono" />
+        </p>
+        <p>
+            <input type="password" placeholder="Ingresa tu contraseña" name="pasword"/>
+        </p>
+
+        <p>Genero</p>
+
+        <p>
+            <label for="masculino">
+                Masculino
+                <input id="masculino" type="radio" name="genero" value="masculino"/>
+            </label>
+        </p>
+
+        <p>
+            <label for="">
+                Femenino
+                <input id="masculino" type="radio" name="genero" value="femenino" />
+            </label>
+        </p>
+
+        <p>
+            <label for="">
+                Otro
+                <input id="masculino" type="radio" name="genero" value="otro" />
+            </label>
+        </p>
+
+        <p>
+        <input type="text" value="PERU" readonly />
+        </p>
+
+        <p>Paises</p>
+        <select name="" id="">
+            <option value="pe">Perú</option>
+            <option value="co">Colombia</option>
+            <option value="ar">Argentina</option>
+            <option value="ch">Chile</option>
+        </select>
+
+        <p>Ciudades</p>
+        <select name="" id="">
+            <option value="10" disabled selected>Elige</option>
+            <option value="10">Bogota</option>
+            <option value="1">Barranquilla</option>
+            <option value="5">Medellin</option>
+            <option value="6">Cali</option>
+        </select>
+
+        <p>Cursos</p>
+        <p>JavaScript <input type="checkbox" name="curso1" /></p>
+        <p>HTML <input type="checkbox" name="curso2" /></p>
+        <p>React JS <input type="checkbox" name="curso3" /></p>
+        <p>Next JS <input type="checkbox" name="curso4" /></p>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+
+</html>
