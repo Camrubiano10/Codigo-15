@@ -1,0 +1,29 @@
+/* * = Todo  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+
+/* Alinear elementos de forma horizontal */
+justify-content: center;
+
+/* Alinear elementos de forma vertical */
+align-items: center;
+
+/* vh = viewport height  */
+height: 100vh;
+border: solid red;
+}
+
+div {
+    border: solid;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }

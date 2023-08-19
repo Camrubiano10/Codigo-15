@@ -1,0 +1,192 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: blue;
+    font-size: 80 px;
+}
+
+.selector-clase {
+    color: black;
+    font-size: 30px;
+}
+
+#selector-id {
+    color: yellow;
+    font-size: 24px;
+}
+
+button {
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    transition: all 2s ease;
+
+}
+
+button:hover {
+    background-color: beige;
+}
+
+.pseudo-clase-hover:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.pseudo-clase-link-hover {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.pseudo-clase-link-hover:hover {
+    text-decoration: underline;
+}
+
+.pseudo-clase-link-hover:active {
+    font-size: 40px;
+    color: orange;
+}
+
+.pseudo-clase-link-hover:focus {
+    border: 2px dotted color: violet;
+}
+
+
+/* pseudo-clases: primer y ultimo hijo  */
+
+.hijos-pseudo p:first-child {
+    background-color: red;
+}
+
+.hijos-pseudo p:last-child {
+    background-color: blue;
+}
+
+/* Por numero de fila (hijo)  */
+.hijos-pseudo p:nth-child(3) {
+    background-color: orange;
+}
+
+.hijos-pseudo p:nth-child(4) {
+    background-color: tomato;
+}
+
+/* Por pares  */
+.hijos-pseudo p:nth-child(2n) {
+    background-color: violet;
+}
+
+/* Por impares  */
+.hijos-pseudo p:nth-child(2n-1) {
+    background-color: green;
+}
+
+/* Before  Es un estilo que se aplica antes del texto */
+.prueba-before::before {
+    content: 'hola';
+    color: red;
+    font-size: 30px;
+    width: 12px;
+    height: 12px;
+    background-color: yellow;
+    padding: 6px;
+}
+
+/* After  Es un estilo que se aplica despues del texto */
+.prueba-after::after {
+    content: 'hola';
+    color: red;
+    font-size: 30px;
+    width: 12px;
+    height: 12px;
+    background-color: yellow;
+    padding: 6px;
+}
+
+/* firts letter  Es un estilo que se aplica a una parte especifica no a todo */
+.prueba-firts-letter::first-letter {
+    color: red;
+    font-size: 30px;
+    text-decoration: underline
+}
+
+/* Identificar el campo requerido  */
+.input1:required {
+    border: 1px solid red;
+}
+
+/* Identificar el campo requerido  */
+.input1:valid {
+    background-color: blue;
+    color: white;
+}
+
+/* utilizando mas de un selector  */
+
+.padre ul li:nth-child(3) {
+    background-color: orange;
+    color: blue;
+}
+
+.padre ul .selecciona-este-li {
+    background-color: green;
+    }
+
+ .padre li:nth-child(4) {
+    background-color: aqua;
+     }
+
+/* Forma mas recomendada  */
+
+.selecciona-este-li {
+     background-color: gold;
+     }
+
+/* Herencia  */
+
+.container {
+    color: blue;
+    font-size: 10px;
+    border: 1px solid green;
+}
+
+
+.child {
+    border: inherit;
+    font-size: initial;
+}
+
+/* cascada - el ultimo parametro tiene preferencia */
+.miparrafo {
+    padding 10px;
+    color: red;
+}
+
+.miparrafo {
+    background-color: grey;
+    color: blue;
+}
+
+/* unidades de medida absolutas aquellas que no cambian, mientras que las relativas si cambian de acuerdo al dispositivo que se encuentren */
+
+.caja1 {
+    background-color: brown;
+    width: 300 px;
+    height: 300 px;
+}
+
+.caja2 {
+    background-color: aquamarine;
+    width: 50%;
+    height: 30 px;
+}
+
+.caja3 {
+    background-color: red;
+    width: 50%;
+    font-size: 1rem;
+}
